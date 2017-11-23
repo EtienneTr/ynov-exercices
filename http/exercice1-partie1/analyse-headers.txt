@@ -1,0 +1,35 @@
+REQUEST HEADER
+
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control:max-age=0
+Connection:keep-alive
+Host:localhost:1010
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+
+
+Signification :
+Accept pour les types de documents / langages / encoding acceptés en requête
+cache-controle : politique de cache, par défault valide le cache à la date de la requête
+connection : par défaut keep-alive = persiste la connexion pour autoriser les sous-requêtes après le chargement de la page
+host : hôte de la requête
+Upgrade-Insecure-Requests : autorise les url sécurisés
+User-Agent: infos navigateur utilisé, ici google chrome
+
+
+RESPONSE HEADER
+
+Connection:close
+Content-Length:683
+Content-Type:text/html; charset=UTF-8
+Date:Thu, 23 Nov 2017 14:31:54 +0100
+Host:localhost:1010
+
+Signification:
+connection = status de la connexion au serveur (ici fermé)
+contetn-length : taille de la réponse http
+content-type : type de la réponse http
+Date : date de la réponse
+host : hôte à laquel est envoyée a réponse
