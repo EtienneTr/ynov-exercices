@@ -1,0 +1,1 @@
+host : localhost www.exercice1.fr
