@@ -1,0 +1,13 @@
+{
+    "name": "etienne/exercice2",
+    "description": "Images exercice",
+    "require": {
+        "gregwar/image": "^2.0"
+    },
+    "authors": [
+        {
+            "name": "EtienneTR",
+            "email": "etienne.trouillet@ynov.com"
+        }
+    ]
+}
