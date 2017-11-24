@@ -25,7 +25,7 @@ Class Triangle {
     private function numberOfEqualSides(){
 
 
-        if($this->lg1 - $this->lg2 - $this->lg3 == 0) return 3;
+        if($this->lg1 - $this->lg2 + $this->lg3 == $this->lg1 ) return 3;
 
         else if($this->lg1 - $this->lg2 == 0 || $this->lg1 - $this->lg2 == 0 || $this->lg2 - $this->lg3 == 0) return 2;
 
@@ -37,7 +37,7 @@ Class Triangle {
      */
     public function isIsosceless(){
 
-        return $this->numberOfEqualSides() >= 2;
+        return $this->numberOfEqualSides() == 2;
 
     }
 
@@ -47,7 +47,7 @@ Class Triangle {
 
     public function isRightAngled(){
         //ab² + ac² = bc²
-        return ($this->lg1^ 2 + $this->lg2 ^2) ==  $this->lg3 ^ 2;
+        return (($this->lg1^ 2) + ($this->lg2 ^2)) ==  ($this->lg3 ^ 2);
     }
 
     public function isScalene(){
