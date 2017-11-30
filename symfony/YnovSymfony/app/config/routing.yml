@@ -3,8 +3,8 @@ app:
     type: annotation
 
 courses:
-  path: /courses
-  defaults: {_controller: 'AppBundle:Courses:List'}
+  path: /courses/{page}
+  defaults: {_controller: 'AppBundle:Courses:List', page: 1}
 
 details:
   path: /courses/{number}

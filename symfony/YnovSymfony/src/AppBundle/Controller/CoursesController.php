@@ -22,10 +22,10 @@ class CoursesController extends Controller
     }
 
     // /list
-    public function listAction(Request $request)
+    public function listAction(Request $request, $page)
     {
         // replace this example code with whatever you need
-        return $this->render('AppBundle:courses:index.html.twig');
+        return $this->render('AppBundle:courses:index.html.twig', ['page' => $page]);
     }
 
 
