@@ -12,6 +12,15 @@ details:
   requirements:
     number: '\d+'
 
+
+studentsCreate:
+  resource: '@AppBundle/Controller/'
+  type: annotation
+
+studentsGet:
+  resource: '@AppBundle/Controller/'
+  type: annotation
+
 apropos:
   path: /a-propos
   defaults:  {_controller: 'AppBundle:Apropos'}
