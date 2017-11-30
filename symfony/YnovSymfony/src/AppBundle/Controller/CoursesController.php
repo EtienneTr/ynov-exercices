@@ -31,6 +31,15 @@ class CoursesController extends Controller
 
     public function detailsAction(Request $request, $number)
     {
+        if($number > 100)
+        {
+            throw $this->createNotFoundException("Course's ID can't be greater than 100.");
+        }
+
+        if($number == 42)
+        {
+            throw $this->createAccessDeniedException("Can't access to course 42");
+        }
         // replace this example code with whatever you need
         return $this->render('AppBundle:courses:details.html.twig', [
             'number' => $number

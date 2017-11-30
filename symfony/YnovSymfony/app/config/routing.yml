@@ -7,7 +7,7 @@ courses:
   defaults: {_controller: 'AppBundle:Courses:List', page: 1}
 
 details:
-  path: /courses/{number}
+  path: /courses/detail/{number}
   defaults: {_controller: 'AppBundle:Courses:Details'}
   requirements:
     number: '\d+'
