@@ -13,7 +13,8 @@ use Symfony\Component\HttpFoundation\Request;
 class StudentsController extends Controller
 {
     /**
-     * @Route("/students/create")
+     * @Route("/students/create/")
+     * @Method({"POST"})
      */
     public function createStudentsAction(Request $request)
     {
