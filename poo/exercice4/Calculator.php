@@ -44,7 +44,17 @@ Class TaxIncludedCalculator extends Calculator {
         $this->taxRate = $taxRate;
     }
 
-    public function additionRate($val1, $val2){
+    function __call($name, $arguments){
+        if(in_array($name, ['addition', 'soustraction', 'multiplication', 'puissance', 'resteDivision'])){
+            $initialVal = Calculator::$name(...$arguments);
+            return ($initialVal * (1 + $this->taxRate /100));
+        } else {
+            echo "Méthode inexistante";
+        }
+        return false;
+    }
+
+    /*public function additionRate($val1, $val2){
         return self::addition($val1, $val2) * ($this->taxRate /100);
     }
 
@@ -62,5 +72,5 @@ Class TaxIncludedCalculator extends Calculator {
 
     public function resteDivisionRate($val1, $val2){
         return self::resteDivision($val1, $val2) * ($this->taxRate /100);
-    }
+    }*/
 }

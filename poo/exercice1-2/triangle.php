@@ -109,6 +109,10 @@ Class Triangle {
 
 }
 
+interface ShapeInterface{
+
+}
+
 
 
 

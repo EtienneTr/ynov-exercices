@@ -27,11 +27,11 @@ echo "{$val1} % {$val2}  = {$reste} \r\n<br>";
 $taxRate = 50;
 $taxRateClass = new TaxIncludedCalculator($taxRate);
 
-$add = $taxRateClass->additionRate($val1,$val2);
-$sous = $taxRateClass->soustractionRate($val1,$val2);
-$multi = $taxRateClass->multiplicationRate($val1,$val2);
-$puis = $taxRateClass->puissanceRate($val1,$val2);
-$reste = $taxRateClass->resteDivisionRate($val1,$val2);
+$add = $taxRateClass->addition($val1,$val2);
+$sous = $taxRateClass->soustraction($val1,$val2);
+$multi = $taxRateClass->multiplication($val1,$val2);
+$puis = $taxRateClass->puissance($val1,$val2);
+$reste = $taxRateClass->resteDivision($val1,$val2);
 
 echo "\r\n TaxRate {$taxRate}% \n\n";
 echo "{$val1} + {$val2}  = {$add} \n";

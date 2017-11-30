@@ -1,0 +1,19 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+courses:
+  path: /courses
+  defaults: {_controller: 'AppBundle:Courses:List'}
+
+details:
+  path: /courses/{number}
+  defaults: {_controller: 'AppBundle:Courses:Details'}
+  requirements:
+    number: '\d+'
+
+apropos:
+  path: /a-propos
+  defaults:  {_controller: 'AppBundle:Apropos'}
+  requirements:
+    _local: fr|en
