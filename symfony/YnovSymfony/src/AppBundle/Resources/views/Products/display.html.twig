@@ -4,4 +4,13 @@
 
 {% block body %}
 <h1>Welcome to the Products:Display page</h1>
+
+    <ul>
+    {% for product in products %}
+        <li>{{ product.name }}</li>
+        <li>{{ product.description }}</li>
+        <li>{{ product.price }}</li>
+        <li>{{ product.imageURI }}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}

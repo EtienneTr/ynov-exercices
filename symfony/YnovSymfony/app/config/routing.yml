@@ -21,6 +21,10 @@ studentsGet:
   resource: '@AppBundle/Controller/'
   type: annotation
 
+products:
+  resource: '@AppBundle/Controller/'
+  type: annotation
+
 apropos:
   path: /a-propos
   defaults:  {_controller: 'AppBundle:Default:Apropos'}
