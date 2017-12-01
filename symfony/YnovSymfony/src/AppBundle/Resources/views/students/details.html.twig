@@ -1,17 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends '@App/template-layout.html.twig' %}
 
-{% block body %}
-    <div id="wrapper">
-        <div id="container">
-
-
-            <div id="status">
-                <p>
-                    Affichage des étudiants au cours {{ number }}
-                </p>
-            </div>
-
-        </div>
-    </div>
-{% endblock %}
+{% block title 'Detail étudiant'~ number %}
 

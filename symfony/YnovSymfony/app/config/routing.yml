@@ -23,6 +23,6 @@ studentsGet:
 
 apropos:
   path: /a-propos
-  defaults:  {_controller: 'AppBundle:Apropos'}
+  defaults:  {_controller: 'AppBundle:Default:Apropos'}
   requirements:
     _local: fr|en
